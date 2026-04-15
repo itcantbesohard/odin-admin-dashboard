@@ -150,14 +150,42 @@ img {
     font-size: var(--default-font-size);
 }
 
-.user {
+.user-box {
     display: grid;
-    grid-template-columns: 1fr 50px auto;
+    grid-template-columns: 1fr auto;
     gap: 12px;
     align-items: center;
     justify-items: right;
     font-weight: 500;
 }
+
+.profile {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.profile:hover {
+    background-color: var(--secondary-bg-color);
+    border-radius: 2rem;
+
+}
+
+.user-notification-btn {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.user-notification-btn:hover {
+    background-color: var(--secondary-bg-color);
+}
+
 
 .avatar-mini {
     width: 50px;
@@ -205,6 +233,7 @@ img {
     width: 100px;
     height: 40px;
     cursor: pointer;
+    font-weight: 500;
 }
 
 .btn:hover {
