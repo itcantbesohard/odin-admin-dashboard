@@ -41,8 +41,10 @@ img {
 :root {
     --primary-bg-color: #1e90ff;
     --secondary-bg-color: #e2e8f0;
+    --tertiary-bg-color: #f5c82d;
     --hover-bg-color: #2fa1ff;
     --default-font-size: 18px;
+    --medium-font-size: 21px;
 }
 
 .app {
@@ -81,7 +83,6 @@ img {
 
 .sidebar-nav {
     display: grid;
-    gap: 14px;
 }
 
 .sidebar-nav ul {
@@ -184,7 +185,7 @@ img {
 
 .user-greetings .username {
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: var(--medium-font-size);
 }
 
 
@@ -213,4 +214,48 @@ img {
 .main {
     grid-area: main;
     background-color: var(--secondary-bg-color);
+}
+
+.content {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: auto 0.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+}
+
+.content h2 {
+    font-weight: 500;
+    font-size: var(--medium-font-size);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.projects {
+    grid-column: 1;
+    grid-row: 1/3;
+
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+}
+
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-left: 8px solid var(--tertiary-bg-color);
+    border-radius: 8px;
+}
+
+.announcements {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.trending {
+    grid-column: 2;
+    grid-row: 2;
 }
