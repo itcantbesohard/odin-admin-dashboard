@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <script type="module" src="main.js"></script>
     <title>Admin Dashboard</title>
 </head>
@@ -20,7 +21,7 @@
                 </svg>
                 <span>Dashboard</span>
             </div>
-            <nav class="sidebar-nav">
+            <nav class="sidebar-nav" aria-label="Main navigation">
                 <ul>
                     <li>
                         <a href="#">
@@ -154,12 +155,12 @@
         <main class="main">
             <section class="content">
 
-                <div class="projects">
+                <section class="projects">
                     <h2>Your Projects</h2>
 
                     <div class="projects-grid">
 
-                        <div class="card">
+                        <article class="card">
                             <div class="card-content">
                                 <h3 class="card-title">Super Cool Project</h3>
                                 <p class="card-description">
@@ -190,7 +191,7 @@
                                     </svg>
                                 </button>
                             </div>
-                        </div>
+                        </article>
 
                         <div class="card">
                             <div class="card-content">
@@ -263,7 +264,8 @@
                             <div class="card-content">
                                 <h3 class="card-title">Easy Peasy App</h3>
                                 <p class="card-description">
-                                    He standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+                                    He standard chunk of Lorem Ipsum used since the 1500s is reproduced below for
+                                    those
                                     interested. Sections 1.10.32 and 1.10.33 from...
                                 </p>
                             </div>
@@ -296,7 +298,8 @@
                             <div class="card-content">
                                 <h3 class="card-title">Ad blocker</h3>
                                 <p class="card-description">
-                                    Curabitur scelerisque nunc ut dolor tincidunt, sed accumsan nulla gravida. Sed at
+                                    Curabitur scelerisque nunc ut dolor tincidunt, sed accumsan nulla gravida. Sed
+                                    at
                                     dignissim ipsum. Donec mollis a urna sit amet rhoncus sodales sed....
                                 </p>
                             </div>
@@ -359,8 +362,9 @@
                         </div>
 
                     </div>
-                </div>
-                <div class="announcements">
+                </section>
+
+                <section class="announcements">
                     <h2 class="title">Announcements</h2>
                     <ul class="announcement-list box">
                         <li class="announcement-item">
@@ -384,20 +388,41 @@
                             </p>
                         </li>
                     </ul>
-                </div>
+                </section>
 
-                <div class="trending">
+                <section class="trending">
                     <h2 class="title">Trending</h2>
                     <ul class="trending-list box">
                         <li class="trending-item">
-                            <img src="" alt="" class="trending-avatar">
+                            <img src="assets/images/user-avatar2.png" alt="" class="avatar-mini">
                             <div class="trending-content">
                                 <div class="trending-author">@tegan</div>
-                                <div class="trending-name">World Peeace Builder</div>
+                                <div class="trending-description">World Peeace Builder</div>
+                            </div>
+                        </li>
+                        <li class="trending-item">
+                            <img src="assets/images/user-avatar.png" alt="" class="avatar-mini">
+                            <div class="trending-content">
+                                <div class="trending-author">@morgan</div>
+                                <div class="trending-description">Super Cool Project</div>
+                            </div>
+                        </li>
+                        <li class="trending-item">
+                            <img src="assets/images/user-avatar3.png" alt="" class="avatar-mini">
+                            <div class="trending-content">
+                                <div class="trending-author">@kendel</div>
+                                <div class="trending-description">Life Changing App</div>
+                            </div>
+                        </li>
+                        <li class="trending-item">
+                            <img src="assets/images/user-avatar4.png" alt="" class="avatar-mini">
+                            <div class="trending-content">
+                                <div class="trending-author">@alex</div>
+                                <div class="trending-description">No Traffic Manager</div>
                             </div>
                         </li>
                     </ul>
-                </div>
+                </section>
             </section>
         </main>
     </div>

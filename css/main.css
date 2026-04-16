@@ -1,3 +1,6 @@
+@import "./reset.css";
+@import "./variables.css";
+
 .app {
     min-height: 100vh;
     display: grid;
@@ -16,7 +19,7 @@
 
 .sidebar {
     grid-area: sidebar;
-    background-color: var(--primary-bg-color);
+    background-color: var(--color-primary);
     color: white;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -59,7 +62,7 @@
 }
 
 .sidebar-nav a:hover {
-    background-color: var(--hover-bg-color)
+    background-color: var(--color-primary-hover);
 }
 
 .icon {
@@ -81,7 +84,7 @@
     gap: 12px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    box-shadow: var(--default-box-shadow);
+    box-shadow: var(--shadow);
     z-index: 10;
 }
 
@@ -95,11 +98,11 @@
 }
 
 .search-input {
-    background-color: var(--secondary-bg-color);
+    background-color: var(--color-bg);
     border: none;
     padding: 6px 12px;
     border-radius: 12px;
-    font-size: var(--default-font-size);
+    font-size: var(--font-base);
 }
 
 .user-box {
@@ -122,7 +125,7 @@
 }
 
 .profile:hover {
-    background-color: var(--secondary-bg-color);
+    background-color: var(--color-bg);
     border-radius: 2rem;
 
 }
@@ -135,7 +138,7 @@
 }
 
 .user-notification-btn:hover {
-    background-color: var(--secondary-bg-color);
+    background-color: var(--color-bg);
 }
 
 .avatar-mini {
@@ -164,7 +167,7 @@
 
 .user-greetings .username {
     font-weight: 500;
-    font-size: var(--medium-font-size);
+    font-size: var(--font-m);
 }
 
 .buttons {
@@ -176,7 +179,7 @@
 }
 
 .btn {
-    background-color: var(--primary-bg-color);
+    background-color: var(--color-primary);
     color: white;
     border: none;
     border-radius: 16px;
@@ -187,12 +190,12 @@
 }
 
 .btn:hover {
-    background-color: var(--hover-bg-color);
+    background-color: var(--color-primary-hover);
 }
 
 .main {
     grid-area: main;
-    background-color: var(--secondary-bg-color);
+    background-color: var(--color-bg);
 }
 
 .content {
@@ -205,7 +208,7 @@
 
 .content h2 {
     font-weight: 500;
-    font-size: var(--medium-font-size);
+    font-size: var(--font-m);
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
@@ -225,11 +228,11 @@
 .card {
     background-color: white;
     padding: 1.5rem;
-    border-left: 8px solid var(--tertiary-bg-color);
-    border-radius: 8px;
+    border-left: 8px solid var(--color-acccent);
+    border-radius: var(--radius-s);
+    box-shadow: var(--shadow);
     display: grid;
     grid-template-rows: auto auto;
-    box-shadow: var(--default-box-shadow);
 }
 
 .card-content {
@@ -237,13 +240,13 @@
 }
 
 .card-title {
-    font-size: var(--default-font-size);
+    font-size: var(--font-base);
     font-weight: 500;
 }
 
 .card-description {
-    font-size: var(--small-font-size);
-    color: var(--secondary-font-color);
+    font-size: var(--font-s);
+    color: var(--color-text);
     margin-bottom: 24px;
 }
 
@@ -264,7 +267,7 @@
 }
 
 .card-actions button:hover {
-    background: var(--secondary-bg-color);
+    background: var(--color-bg);
     border-radius: 2rem;
 }
 
@@ -279,11 +282,11 @@
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: var(--default-box-shadow);
+    box-shadow: var(--shadow);
 }
 
 .announcement-item {
-    border-bottom: 2px solid var(--secondary-bg-color);
+    border-bottom: 2px solid var(--color-bg);
     padding: 12px;
 }
 
@@ -293,12 +296,12 @@
 
 .announcement-item h4 {
     font-weight: 500;
-    font-size: var(--small-font-size);
+    font-size: var(--font-s);
 }
 
 .announcement-item p {
-    font-size: var(--x-small-font-size);
-    color: var(--secondary-font-color);
+    font-size: var(--font-xs);
+    color: var(--color-text);
 }
 
 .trending {
@@ -316,10 +319,10 @@
 
 .trending-author {
     font-weight: 500;
-    font-size: var(--small-font-size);
+    font-size: var(--font-s);
 }
 
 .trending-description {
-    font-size: var(--small-font-size);
-    color: var(--secondary-font-color);
+    font-size: var(--font-s);
+    color: var(--color-text);
 }

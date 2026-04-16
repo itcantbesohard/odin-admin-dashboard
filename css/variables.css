@@ -1,0 +1,17 @@
+:root {
+    --color-primary: #0b71d6;
+    --color-primary-hover: #1c82e7;
+    --color-bg: #e2e8f0;
+    --color-acccent: #f5c82d;
+    --color-text: #333;
+
+    ---font-xs: 14px;
+    --font-s: 16px;
+    --font-base: 18px;
+    --font-m: 21px;
+
+    --radius-s: 8px;
+    --radius-l: 16px;
+
+    --shadow: 0 2px 8px rgb(0 0 0 / 8%);
+}
